@@ -1,0 +1,93 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextFormatter</title>
+</head>
+<body>
+    <h1>Text Formatter</h1>
+     when we submit this form everything goes on analyse file  -->
+    <!-- <form action="/analyse" method="get" > 
+          name indicate variable and it hold the value taken by user  -->
+        <!-- <textarea name="some" id="" cols="30" rows="10" style="width: 1200px; height: 152px;"></textarea>   
+        <div>
+        <input type="checkbox" name="removepunc">Remove punctiation <br>
+        <input type="checkbox" name="removespace">Remove ExtraSpace<br>
+        <input type="checkbox" name="removenewline">Remove New Line<br>        
+        <input type="checkbox" name="charcount">Count of characters<br>
+        <input type="checkbox" name="capfirst">Capitalize First Letter<br>
+        <input type="checkbox" name="capwhole">Capitalize Whole<br>
+        </div>
+        <button type="submit">Formate Text</button> 
+    </form> -->
+    
+<!-- </body>
+</html> --> 
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>TextFormatter</title>
+  </head>
+  <body>
+    <!-- Hero Section  -->
+    <section class="hero hero-body is-info container">
+      <!-- <figure class="image is-128x128">
+        <img src="./img/Location-info-img.svg" />
+      </figure> -->
+
+      <h1 class="title">Text Formatter</h1>
+      <h2 class="subtitle"></h2>
+      <p>{{analyse.date}}</p>
+      <p class="subtitle">Write a Paragraph and see the magic.</p>
+
+      <form id="zipForm" action="/analyse" method="get" >
+        <!-- here we are taking data on analyse file  -->
+        <div class="field">
+            <textarea name="some" id="" cols="30" rows="10" style="width: 1042px; height: 176px;"></textarea>   
+            <div>
+            <input class="mt-5 " type="checkbox" name="removepunc">Remove Punctuation <br>
+            <input type="checkbox" name="removespace">Remove ExtraSpace<br>
+            <input type="checkbox" name="removenewline">Remove New Line<br>        
+            <input type="checkbox" name="charcount">Count of characters<br>
+            <input type="checkbox" name="capfirst">Capitalize First Letter<br>
+            <input type="checkbox" name="capwhole">Capitalize Whole<br>
+            </div>
+
+          
+          <button type="submit" class="button is-primary is-normal mt-5">
+            <strong>Format Text</strong>
+          </button>
+          <button type="reset" class="button is-primary is-normal mt-5 ml-3 n">
+            <strong>Clear</strong>
+          </button>
+        </div>
+      </form>
+    </section>
+
+<!--     
+    <div class="container">
+      <img class="loader" src="img/spinner.png" alt="loading" />
+      <div id="output"></div>
+    </div>
+
+    <script src="app.js"></script> -->
+  </body>
+</html>
